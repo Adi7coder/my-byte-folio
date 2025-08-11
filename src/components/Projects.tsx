@@ -4,6 +4,7 @@ import { ExternalLink, Github, TrendingUp, CheckSquare } from 'lucide-react';
 
 export const Projects: React.FC = () => {
   const projects = [
+      
     {
       title: 'InvestAI',
       subtitle: 'Personalized Investment Portfolio Recommendation Tool',
@@ -18,6 +19,22 @@ export const Projects: React.FC = () => {
         'CLI-based interface'
       ]
     },
+    {
+      title: 'AI-Stock-Prediction-Tool',
+      subtitle: 'AI-powered Stock Price Prediction Platform',
+      description: 'Developed an AI-driven stock price prediction system integrating Long Short-Term Memory (LSTM) models with news sentiment analysis. The tool supports both US and Indian markets, leveraging advanced data engineering, NLP-based sentiment scoring, and an interactive Streamlit dashboard.',
+      icon: TrendingUp,
+      technologies: ['Python', 'Pandas', 'NumPy', 'yfinance', 'Scrapy', 'HuggingFace Transformers', 'Streamlit'],
+      github: 'https://github.com/Adi7coder/AI-Stock-prediction-tool/tree/master/',
+      features: [
+        'LSTM-based sequential modeling for next-day stock price prediction',
+        'Sentiment analysis using transformer-based RoBERTa model',
+        'Automated data collection from APIs and web scraping',
+        'Interactive Streamlit dashboard for visualization and predictions',
+        'Robust data alignment with pandas merge_asof for asynchronous sources',
+        'Fallback to price-only model if sentiment data unavailable'
+      ]
+    },  
     {
       title: 'Task Manager',
       subtitle: 'Web-based Productivity Tool',
